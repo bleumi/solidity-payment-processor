@@ -24,6 +24,10 @@ Run the following command to deploy the contracts to the specified network
 $ truffle migrate --network <network>
 ```
 
+Make a note of the contract address of the Escrow Wallet Library (`'TempWallet'`) & Factory Library (`'Create2Factory'`).
+
+![screenshot of truffle migrate output](assets/truffle_migrate.png)
+
 ## Sample Payment Flow
 
 **Step 1:** Customer places an order on an eCommerce store and provides their wallet address.
