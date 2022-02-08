@@ -38,7 +38,7 @@ const getSalt = async function () {
 }
 ```
 
-**Step 3:** The eCommerce store will derive a unique escrow address. For ease of use, one may also use the `computeAddress` view function on `Create2Factory.sol`. The following JavaScript code can be used as a reference.
+**Step 3:** The eCommerce store will derive a unique escrow address. For ease of use, one may also use the `computeAddress` view function on `Create2Factory.sol`. The following JavaScript code can be used as a reference. A live demo of the code is available at [https://stackblitz.com/edit/js-9vdykf?file=index.js](https://stackblitz.com/edit/js-9vdykf?file=index.js).
 
 ```js
 (function () {
