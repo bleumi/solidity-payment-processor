@@ -133,3 +133,29 @@ const getSalt = async function () {
 **Step 5:** The eCommerce store confirms the payment transaction and completes the order. The user is then redirected to the order completed page.
 
 **Step 6:** The eCommerce store deploys the contract byte code and calls the `settle` or `settleETH` function to withdraw the funds.
+
+## Demo
+
+### ERC20 Settlement on RSK Testnet
+
+[![RSK Settlement Demo](assets/vimeo_settlement_demo.png)](https://vimeo.com/674894504)
+
+* Factory Library (`Create2Factory.sol`): [0x9eC91054d180edcde59713f9740aFF6e90c254eA](https://explorer.testnet.rsk.co/address/0x9eC91054d180edcde59713f9740aFF6e90c254eA)
+* Escrow Wallet Library (`TempWallet.sol`): [0xb18e6f6da182eb3767f44ee47dcaa400f2499467](https://explorer.testnet.rsk.co/address/0xb18e6f6da182eb3767f44ee47dcaa400f2499467)
+* Merchant Wallet: [0x9266095d58cdd9c4e0c4414c3bdd2bbeb28d650c](https://explorer.testnet.rsk.co/address/0x9266095d58cdd9c4e0c4414c3bdd2bbeb28d650c)
+* Customer Wallet: [0x0cb6f44c1849fc2aec2a41c3912c0c19e4649915](https://explorer.testnet.rsk.co/address/0x0cb6f44c1849fc2aec2a41c3912c0c19e4649915)
+* Escrow Wallet: [0xe97d5cf63d4f46842b2b3850c6ed2e49ad044c34](https://explorer.testnet.rsk.co/address/0xe97d5cf63d4f46842b2b3850c6ed2e49ad044c34?__tab=tokens%20transfers)
+* 10 USD Payment Tx: [0x1888e58a928c5008a6a2c1de71e19d2884f523cf9f19d0e4e202e8c4ea668cb5](https://explorer.testnet.rsk.co/tx/0x1888e58a928c5008a6a2c1de71e19d2884f523cf9f19d0e4e202e8c4ea668cb5?__ctab=Token%20Transfers)
+* 10 USD Settlement Tx: [0xb6cd91329828c400c3f2f06486efb5e4ae99e01b1967004a01c338a97145b422](https://explorer.testnet.rsk.co/tx/0xb6cd91329828c400c3f2f06486efb5e4ae99e01b1967004a01c338a97145b422?__ctab=Token%20Transfers)
+
+### ERC20 Refund on RSK Testnet
+
+[![RSK Refund Demo](assets/vimeo_refund_demo.png)](https://vimeo.com/674895232)
+
+* Factory Library (`Create2Factory.sol`): [0x9eC91054d180edcde59713f9740aFF6e90c254eA](https://explorer.testnet.rsk.co/address/0x9eC91054d180edcde59713f9740aFF6e90c254eA)
+* Escrow Wallet Library (`TempWallet.sol`): [0xb18e6f6da182eb3767f44ee47dcaa400f2499467](https://explorer.testnet.rsk.co/address/0xb18e6f6da182eb3767f44ee47dcaa400f2499467)
+* Merchant Wallet: [0x9266095d58cdd9c4e0c4414c3bdd2bbeb28d650c](https://explorer.testnet.rsk.co/address/0x9266095d58cdd9c4e0c4414c3bdd2bbeb28d650c)
+* Customer Wallet: [0x0cb6f44c1849fc2aec2a41c3912c0c19e4649915](https://explorer.testnet.rsk.co/address/0x0cb6f44c1849fc2aec2a41c3912c0c19e4649915)
+* Escrow Wallet: [0xc3c2ea927d6d8efa5218e7f4820d051d6a9c12e8](https://explorer.testnet.rsk.co/address/0xc3c2ea927d6d8efa5218e7f4820d051d6a9c12e8?__tab=tokens%20transfers)
+* 11 USD Payment Tx: [0xd9f27012966dca0dad839c44fc4b57d3289ed157178d78bd85a28549154277cf](https://explorer.testnet.rsk.co/tx/0xd9f27012966dca0dad839c44fc4b57d3289ed157178d78bd85a28549154277cf?__ctab=Token%20Transfers)
+* 11 USD Refund Tx: [0x0328a4a85b2d852381786df8a9d04b8f97d41dc20c80734fb5645c5184e82cff](https://explorer.testnet.rsk.co/tx/0x0328a4a85b2d852381786df8a9d04b8f97d41dc20c80734fb5645c5184e82cff?__ctab=Token%20Transfers)
