@@ -131,3 +131,5 @@ const getSalt = async function () {
 **Step 4:** The customer transfers the specified token into the unique escrow for the order.
 
 **Step 5:** The eCommerce store confirms the payment transaction and completes the order. The user is then redirected to the order completed page.
+
+**Step 6:** The eCommerce store deploys the contract byte code and calls the `settle` or `settleETH` function to withdraw the funds.
